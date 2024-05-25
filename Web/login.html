@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/login/login.css">
+    
+    <link rel="stylesheet" href="./asset/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://wall.vn/wp-content/uploads/2020/04/cau-rong-da-nang.jpg");
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+        }
+    </style>
+</head>
+<body>
+    <div  class=""header>
+        
+    </div>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+           <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"> <i class="ti-facebook"></i></a>
+                    <a href="#" class="social"> <i class="ti-google"></i></a>
+                    <a href="#" class="social"> <i class="ti-twitter"></i></a>
+                </div>
+                 <span>
+                     or use your email for registration
+                </span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Fogot your password? </a>
+                <button><a href="Index.html">Sign Up</a></button>
+
+           </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form action="#">
+                 <h1>Sign In</h1>
+                 <div class="social-container">
+                     <a href="#" class="social"> <i class="ti-facebook"></i></a>
+                     <a href="#" class="social"> <i class="ti-google"></i></a>
+                     <a href="#" class="social"> <i class="ti-twitter"></i></a>
+                 </div>
+                  <span>
+                      or use account
+                 </span>
+                 <input type="email" placeholder="Email">
+                 <input type="password" placeholder="Password">
+                 <a href="#">Fogot your password? </a>
+                 <button><a href="Index.html">Sign Up</a></button>
+            </form>
+         </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="sign" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="sign" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+   <script >
+     const byId = (id) => {
+        return document.getElementById(id);
+        }
+        const $signUpButton = byId ('signUp');
+        const $signInButton = byId ('signIn');
+        const $container = byId ('container');
+
+        $signUpButton.addEventListener(
+            'click',
+            () => {
+                $container.classList.add(
+                    'right-panel-active'
+                );
+            },
+        );
+        $signInButton.addEventListener(
+            'click',
+            () => {
+                $container.classList.remove(
+                    'right-panel-active'
+                );
+            },
+        );
+   </script>
+</body>
+</html>

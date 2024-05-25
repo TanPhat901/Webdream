@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khách sạn</title>
+    <link rel="stylesheet" href="assets/cssHotel/style.css">
+    <link rel="stylesheet" href="./assets/cssHotel/reponsive.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/sss/reponsive.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+  <style>
+        .item:hover {
+            transform: scale(1.04);
+        }
+  </style>
+</head>
+<body>
+    <div class="header" style="font-family:Times new romans;">
+        <div class="container-header">
+            <div class="header-logo">
+                <p>Dream</p>
+                <div class="nav-toggle"> <!-- Thêm nút menu vào đây -->
+                <button class="toggle-button"></button> <!-- Sử dụng thẻ button -->
+                </div>
+            </div>
+            <div class="header-nav" >
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="Hotel.html">Khách sạn</a></li>
+                        <li><a href="MB.html">Vé máy bay</a></li>
+                        <li><a href="xe.html">Xe du lịch</a></li>
+                        <li><a href="UD.html">Ưu đãi</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-login">
+                <nav>
+                    <ul>
+                        <li><a href="#">Đăng ký</a></li>
+                        <li><a href="#">Đăng nhập</a></li>
+                        <li><button class="js-kham-pha">Khám phá</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="bg_hotel" >
+            <div class="table_hotel">
+                    <div class="title">
+                        <br>
+                        <p>TÌM KIẾM PHÒNG <br>NGAY HÔM NAY</p>
+                    </div>
+                    <div class="box">
+                        <form>
+                            <table class="tab_sug">
+                                   <br> 
+                                   <tr>
+                                    <td class="td1"></td>
+                                    <td>
+                                        <div class="radio-input">
+                                            <label>
+                                            <input type="radio" id="value-1" name="value-radio" value="value-1">
+                                            <span>Ở trong ngày</span>
+                                            </label>
+                                            <label>
+                                              <input type="radio" id="value-2" name="value-radio" value="value-2">
+                                            <span>Ở qua đêm</span>
+                                            </label>
+                                            <span class="selection"></span>
+                                        </div>
+                                    </td>
+                                    <td class="td1"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <hr style="width: 100%;">
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="goiY" style="text-align: left;"> &ensp; &ensp; Thành phố, địa điểm hoặc tên khách sạn:</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input type="text" class="diaChi"  placeholder="Nhập điểm du lịch hoặc khách sạn">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="ngaydi" class="goiY">Ngày nhận phòng:</label>
+                                    </td>
+                                    <td colspan="2"><label for="ngayve" class="goiY">Ngày trả phòng:</label></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input type="date" id="ngaydi" >
+                                        <input type="date" id="ngayve">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="goiY">Người lớn <br> <i>(>12 tuổi)</i></td>
+                                    <td class="goiY">Trẻ em<br> <i>(<12 tuổi)</i></td>
+                                    <td class="goiY">Số phòng<br></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="" value="1" class="tuoi" ></td>
+                                    <td><input type="text" name="" value="2" class="tuoi" ></td>
+                                    <td><input type="text" name="" value="3" class="tuoi" ></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input id="sub" type="submit" value="TÌM KIẾM PHÒNG" style="border-radius: 8px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                      
+            </div>
+    
+    </div>   
+    <div id="sl_hotel">
+        <div class="sug_hotel">
+            <center><h1>Các khách sạn gợi ý</h1></center>
+            <div class="re-container">
+                <div class="container-se">
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#"><img src="https://booking.muongthanh.com/images/hotels/rooms/original/grand-suite-1_1678764566_1686882143.jpg" alt="" style="width: 100%; height:180px;"></a>
+                            </div> 
+                            <div class="card-footer">
+                                <a href="#">
+                                <b class="name-hot">Khách sạn Mường Thanh</b> <br>
+                                <i class="ti-location-pin">Phước Mỹ, Đà nẵng</i> <br>
+                                <div class="giaGoc">1.950.000VNĐ</div>
+                                <div class="giaGiam"><b>750.000VNĐ</b></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                            <div class="card">
+                              <div class="card-body"><a href="#"><img src="https://cdn1.ivivu.com/iVivu/2019/01/31/16/khach-san-flc-luxury-quy-nhon-14-800x450.webp?o=jpg" alt="" style="width: 100%; height:180px;"></a></div> 
+                              <div class="card-footer">
+                                <a href="#">
+                                <b class="name-hot">FLC Luxury Hotel Quy Nhon</b> <br>
+                                <i class="ti-location-pin">Nhơn Lý, Quy Nhơn</i> <br>
+                                <div class="giaGoc">1.950.000VNĐ</div>
+                                <div class="giaGiam"><b>750.000VNĐ</b></div>
+                                </a>
+                              </div>
+</div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body"><a href="#"><img src="https://booking.muongthanh.com/images/hotels/rooms/original/rt_grand_suite_1698228567.jpg" alt="" style="width: 100%; height:180px;"></a></div> 
+                            <div class="card-footer">
+                                <a href="#">
+                                <b class="name-hot">Khách sạn Mường Thanh</b> <br>
+                                <i class="ti-location-pin">Hải Châu, Đà nẵng</i> <br>
+                                <div class="giaGoc">2.110.000VNĐ</div>
+                                <div class="giaGiam"><b>906.000VNĐ</b></div>
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body"><a href="#"><img src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10022366-80a6b420b5997896dcf01618f880cf4f.jpeg?_src=imagekit&tr=dpr-2,c-at_max,h-360,q-40,w-640" alt="" style="width: 100%; height:180px;"></a></div> 
+                            <div class="card-footer">
+                                <a href="#">
+                                <b class="name-hot">Grand Plaza Hà Nội</b> <br>
+                                <i class="ti-location-pin">Cầu Giấy, Hà Nội</i> <br>
+                                <div class="giaGoc">2.510.000VNĐ</div>
+                                <div class="giaGiam"><b>1.906.000VNĐ</b></div>
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body"><a href="#"><img src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10031926-2048x1367-FIT_AND_TRIM-b8ecadcc55f5301bff26b4d936349bbf.jpeg?_src=imagekit&tr=dpr-2,c-at_max,h-360,q-40,w-640" alt="" style="width: 100%; height:180px;"></a></div> 
+                            <div class="card-footer">
+                                <a href="#">
+                                <b class="name-hot">TTC Hotel Phan Thiết</b> <br>
+                                <i class="ti-location-pin">Hưng Long, Phan thiết</i> <br>
+                                <div class="giaGoc">1.900.000VNĐ</div>
+                                <div class="giaGiam"><b>1.430.000VNĐ</b></div>
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body"><a href="#"><img src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20018358-aec6044df9f60d1fb175be17a6fcad7c.jpeg?_src=imagekit&tr=dpr-2,c-at_max,h-360,q-40,w-640" alt="" style="width: 100%; height:180px;"></a></div> 
+                                <div class="card-footer">
+                                <a href="#">
+                                    <b class="name-hot">Len's Hotel</b> <br>
+                                    <i class="ti-location-pin">Phường 2, Đà Lạt</i> <br>
+                                    <div class="giaGoc">2.110.000VNĐ</div>
+                                    <div class="giaGiam"><b>1.540.000VNĐ</b></div>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body"><a href="#"><img src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10035421-9b355fcc7aba311b7e68e90a46d320fa.jpeg?_src=imagekit&tr=dpr-2,c-at_max,h-360,q-40,w-640" alt="" style="width: 100%; height:180px;"></a></div> 
+                                <div class="card-footer">
+                                    <a href="#">
+                                    <b class="name-hot">Amarin Resort </b> <br>
+                                    <i class="ti-location-pin">Dương Đông, Phú Quốc</i> <br>
+                                    <div class="giaGoc">2.510.000VNĐ</div>
+                                    <div class="giaGiam"><b>1.840.000VNĐ</b></div>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="card-body"><a href="#"><img src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20022759-5b17602d4b86bd25c36de2e9d88daf3f.jpeg?_src=imagekit&tr=dpr-2,c-at_max,h-360,q-40,w-640" alt="" style="width: 100%; height:180px;"></a></div> 
+                                <div class="card-footer">
+                                    <a href="#">
+                                    <b class="name-hot">Riva Hotel</b> <br>
+                                    <i class="ti-location-pin">Phường 2, Vũng Tàu</i> <br>
+                                    <div class="giaGoc">1.650.00VNĐ</div>
+                                    <div class="giaGiam"><b>1.302.000VNĐ</b></div>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        
+                    </div>
+                    <br>
+                    <center>
+                    <button id="prevButton-se" onclick="scrollleft()"><i class="ti-angle-left"></i></button>
+                    <button id="nextButton-se" onclick="scrollRight()"><i class="ti-angle-right"></i></button>
+                    </center>
+                    <br> <br> <br> <br>
+                </div>
+                <script src="./assets/cssHotel/crip.js"></script>
+            </div>
+        </div>    
+        
+        <div class="sug-partner">
+            <div class="pic_partner">
+                <div class="table-row">
+                    <div ><img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/08/08/1502200809743-5dde6f77b2b13ac38a752953eb78e692.png?tr=dpr-2,q-75,w-88" alt="" class="pic-par"></div>
+                    <div ><img src="https://ik.imagekit.io/tvlk/image/imageResource/2018/01/29/1517201056739-4030efe3d4ea793a40904f712cec37af.png?tr=dpr-2,q-75,w-88" alt="" class="pic-par"></div>
+                </div>
+                <div class="table-row">
+                    <div ><img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/08/08/1502200796134-3e687ae7c1e145253ef72691f5f18318.png?tr=dpr-2,q-75,w-88" alt="" class="pic-par"></div>
+                    <div ><img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/08/08/1502200805093-7f22b69691bac8cee0ef4b3f0988fd78.png?tr=dpr-2,q-75,w-88" alt="" class="pic-par"></div>
+                </div>
+                <div class="table-row">
+                    <div ><img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/08/08/1502200782803-92cd85419dd6440bbc1c7b8d5a061249.png?tr=dpr-2,q-75,w-88" alt="" class="pic-par"></div>
+                    <div> <img src="https://ik.imagekit.io/tvlk/image/imageResource/2018/01/29/1517201226378-8affc1dfeeafe879121fc94652a7332f.png?tr=dpr-2,q-75,w-88" alt="" class="pic-par"></div>
+                </div>
+                <div class="table-row">
+                    <div><img src="https://ik.imagekit.io/tvlk/image/imageResource/2017/08/08/1502200776552-f852b752ae88e7e0902fb0d3bfc41a00.png?tr=dpr-2,q-75,w-88" alt="" class="pic-par"></div>
+                    <div><img src="https://ik.imagekit.io/tvlk/image/imageResource/2022/10/26/1666769812521-2f9e73b3dfa37b1a8774517477bce6f3.png?tr=dpr-2,q-75,w-88" alt="" class="pic-par"></div>
+                </div>
+                <div class="table-row">
+                    <div><img src="https://ik.imagekit.io/tvlk/image/imageResource/2018/01/29/1517200921330-784c7f0f6798fdb7c3b14d23881d5090.jpeg?tr=dpr-2,q-75,w-88" alt="" class="pic-par"></div>
+                    <div><img src="https://ik.imagekit.io/tvlk/image/imageResource/2018/01/29/1517201013000-1f5c98cc6081ca889e0ee99d4bdae1ce.png?tr=dpr-2,q-75,w-88" alt="" class="pic-par"></div>
+                </div>
+            </div>
+            
+            <div class="introduct-par">
+                <h2>Đối tác khách sạn</h2>
+                <br>
+                <p>Chúng tôi đã thiết lập mối quan hệ hợp tác chặt chẽ với các chuỗi khách sạn hàng đầu trên toàn cầu để đảm bảo rằng bạn luôn có trải nghiệm kỳ nghỉ tuyệt vời nhất tại mọi điểm đến trong mơ của mình!</p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="service-main">
+                <h3 style="padding: 20px;">DỊCH VỤ CỦA CHÚNG TÔI</h3>
+                <div class="container-service service-carousel">
+                    <div class="service">
+                        <div class="service-content">
+                            <i class="fa-solid fa-users"></i>
+                            <h3>Đội ngũ nhân viên chuyên nghiệp</h3>
+                        </div>
+                        <div class="service-text">Đội ngũ nhân viên chuyên nghiệp của chúng tôi là động lực hàng đầu trong mỗi chuyến đi. Với sự am hiểu sâu sắc về du lịch và tinh thần phục vụ, họ cam kết mang đến trải nghiệm tốt nhất cho mỗi khách hàng.</div>
+                    </div>
+                    <div class="service">
+                        <div class="service-content">
+                            <i class="fa-solid fa-headset"></i>
+                            <h3>Hỗ trợ 24/7</h3>
+                        </div>
+                        <div class="service-text">Đội ngũ nhân viên chuyên nghiệp của chúng tôi không chỉ là đồng đội tận tâm, mà còn là điểm tựa đáng tin cậy cho mọi khách hàng. Với cam kết hỗ trợ 24/7, họ luôn sẵn lòng đáp ứng mọi nhu cầu và giải quyết mọi vấn đề để đảm bảo mỗi chuyến đi diễn ra suôn sẻ và đáng nhớ nhất.</div>
+                    </div>
+                    <div class="service">
+                        <div class="service-content">
+                            <i class="fa-solid fa-shield-check"></i>
+                            <h3>Chất lượng dịch vụ</h3>
+                        </div>
+                        <div class="service-text">Chất lượng dịch vụ là tiêu chí hàng đầu của. Mỗi chuyến đi không chỉ được lên kế hoạch cẩn thận mà còn được thực hiện với sự tận tâm và kinh nghiệm, đảm bảo mang lại sự hài lòng tuyệt đối cho mọi du khách.</div>
+                    </div>
+                    
+                    <div class="service">
+                        <div class="service-content">
+                            <i class="fa-solid fa-cart-shopping-fast"></i>
+                            <h3>Đặt tour</h3>
+                        </div>
+                        <div class="service-text">Chất lượng dịch vụ của chúng tôi còn được thể hiện qua dịch vụ đặt tour chuyên nghiệp. Từ việc tư vấn đến việc tổ chức, chúng tôi cam kết mang lại những trải nghiệm du lịch độc đáo và đáng nhớ cho mọi khách hàng.</div>
+                    </div>
+                </div>
+            </div>
+        <div class="container-footer">
+            <div class="footer">
+                <div class="newsletter">
+                    <div class="newsletter-left">
+                        <h2>Đăng ký nhận</h2>
+                        <h1>bản tin du lịch</h1>
+                    </div>
+                    <div class="newsletter-right">
+                        <div class="newsletters-input">
+                            <input type="text" placeholder="Nhập địa chỉ email của bạn" name="" id="">
+                            <button>Gửi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-main">
+                        <h2>Dream</h2>
+                        <p>Khám phá thế giới cùng chúng tôi, nơi mọi hành trình đều trở nên đáng nhớ.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                            <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+                            <a href="#"><i class="ph-fill ph-tiktok-logo"></i></a>
+                            <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <p>Thông tin</p>
+                        <a href="#" class="link">Công ty của chúng tôi</a>
+                        <a href="#" class="link">Về chúng tôi</a>
+                        <a href="#" class="link">Blog</a>
+                    </div>
+                    <div class="links">
+                        <p>Liên kết hữu ích</p>
+                        <a href="#" class="link">Dịch vụ</a>
+                        <a href="#" class="link">Hỗ trợ</a>
+                        <a href="#" class="link">Điều khoản & Điều kiện</a>
+                    </div>
+                    <div class="links">
+                        <p>Điều hướng</p>
+                        <a href="#" class="link">Trang chủ</a>
+                        <a href="#" class="link">Giới thiệu</a>
+                        <a href="#" class="link">Liên hệ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
